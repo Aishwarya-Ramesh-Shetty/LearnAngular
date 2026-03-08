@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { AddSkillComponent } from './add-skill/add-skill';
+import { PersonalBudgetTrackerComponent } from './personal-budget-tracker/personal-budget-tracker';
+// import { AddSkillComponent } from './add-skill/add-skill';
 // import { ToggleStatusComponent } from './toggle-status/toggle-status';
 // import { CharacterCountDisplayComponent } from './character-count-display/character-count-display';
 
 @Component({
   selector: 'app-root',
-  imports: [ AddSkillComponent],
+  imports: [PersonalBudgetTrackerComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

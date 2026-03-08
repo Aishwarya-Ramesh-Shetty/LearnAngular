@@ -1,0 +1,35 @@
+<h1>Personal Budget Tracker</h1>
+
+<div>
+    <p>Welcome to the Personal Budget Tracker! This application helps you manage your finances by tracking your income and expenses. You can add new transactions, view your current balance, and analyze your spending habits over time.</p>
+    
+    <h2>Features:</h2>
+    <ul>
+        <li>Add and categorize transactions (income and expenses)</li>
+        <li>View current balance and transaction history</li>
+        <li>Generate reports to analyze spending patterns</li>
+        <li>Set budget limits and receive notifications</li>
+    </ul>
+    
+    <p>Start by adding your first transaction to see how it works!</p>
+</div>
+
+<div>
+    <h2>Add Transaction</h2>
+    <form>
+        <label for="description">Description</label>
+        <input type="text" placeholder="Enter transaction description" [(ngModel)]="newExpense.description" name="description">
+        <br><br>
+        <label>Amount</label>
+        <input type="number" placeholder="Enter amount" [(ngModel)]="newExpense.amount" name="amount">
+        <br><br>
+        <label>Type</label>
+        <select name="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <br><br>
+        <button (click)="addTransaction()">Add Transaction</button>
+    </form>
+    <p>Total Amount is {{totalAmount}}</p>
+</div>
