@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+
+<textarea [(ngModel)]="message" rows="5"></textarea>
+
+<p>character remaining : {{maxChars-message.length}}</p>
+
+<p [style.color]="message.length > maxChars ? 'red' : 'blue'">Total typed : {{message.length}}/{{maxChars}}</p>
+<button (click)="clearText()" [disabled]="message.length === 0">Clear Text</button>

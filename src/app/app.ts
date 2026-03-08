@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { ToggleStatusComponent } from './toggle-status/toggle-status';
+// import { ToggleStatusComponent } from './toggle-status/toggle-status';
+import { CharacterCountDisplayComponent } from './character-count-display/character-count-display';
 
 @Component({
   selector: 'app-root',
-  imports: [ToggleStatusComponent],
+  imports: [ CharacterCountDisplayComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
