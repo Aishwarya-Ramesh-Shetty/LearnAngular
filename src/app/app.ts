@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ToggleStatusComponent } from './toggle-status/toggle-status';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ToggleStatusComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('FirstAng');
+  title = 'First Angular App';
+  developerName = 'Ash';
+  status = 'Learning Angular';
 }

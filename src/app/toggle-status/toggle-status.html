@@ -1,0 +1,8 @@
+<div>
+    <h1>{{title}}</h1>
+
+    <img [src]="isOnline ? happyEmoji: sadEmoji" width="100" height="100">
+    <p>{{isOnline ? 'Online' : 'Offline'}}</p>
+    <button (click)="toggleStatus()">Switch Emoji</button>
+   
+</div>
