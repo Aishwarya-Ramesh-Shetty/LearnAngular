@@ -1,0 +1,29 @@
+<h1>Add Skill</h1>
+<p>Today is {{today | date:'mediumDate'}}</p>
+<!-- Learned about Pipe in Angular -->
+
+
+
+<input type="text" placeholder="Enter a skill" [(ngModel)]="newSkill">
+<!-- Two way binding -->
+
+
+<button (click)="addSkill()">Add Skill</button>
+
+
+
+<!-- Learned about Event binding and For in angular -->
+
+
+<ul>
+   @for (skill of skills;track $index) {
+    <li>
+        {{skill | uppercase}} 
+        <button (click)="deleteSkill($index)">Delete</button>
+    </li>
+    <br>
+   }
+   @empty {
+    <li>No skills added yet.</li>
+   }
+</ul>

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { AddSkillComponent } from './add-skill/add-skill';
 // import { ToggleStatusComponent } from './toggle-status/toggle-status';
-import { CharacterCountDisplayComponent } from './character-count-display/character-count-display';
+// import { CharacterCountDisplayComponent } from './character-count-display/character-count-display';
 
 @Component({
   selector: 'app-root',
-  imports: [ CharacterCountDisplayComponent],
+  imports: [ AddSkillComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
